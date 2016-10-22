@@ -54,14 +54,46 @@
 		CE7A0BAE1DBBD9E2000C27CE /* QBConnectHack */ = {
 			isa = PBXGroup;
 			children = (
-				CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */,
-				CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */,
+				CE7A0BC41DBC0DBA000C27CE /* Model */,
+				CE7A0BC31DBC0DAB000C27CE /* Views */,
+				CE7A0BC21DBC0D9F000C27CE /* Controllers */,
 				CE7A0BB31DBBD9E2000C27CE /* Main.storyboard */,
+				CE7A0BC11DBC0D81000C27CE /* Supporting Files */,
+			);
+			path = QBConnectHack;
+			sourceTree = "<group>";
+		};
+		CE7A0BC11DBC0D81000C27CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				CE7A0BB61DBBD9E2000C27CE /* Assets.xcassets */,
 				CE7A0BB81DBBD9E2000C27CE /* LaunchScreen.storyboard */,
 				CE7A0BBB1DBBD9E2000C27CE /* Info.plist */,
+				CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */,
 			);
-			path = QBConnectHack;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE7A0BC21DBC0D9F000C27CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CE7A0BC31DBC0DAB000C27CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE7A0BC41DBC0DBA000C27CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
