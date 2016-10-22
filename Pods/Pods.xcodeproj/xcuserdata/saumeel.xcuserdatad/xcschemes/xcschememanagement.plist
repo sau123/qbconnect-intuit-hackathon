@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HPReorderTableView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01A282428A633A16333EF7157914B2B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2C8AA1BAF35413BDB954A1DF93576ED1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6FE3191E414B076A7FF57E338BB7A153</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7129FAB61478FA70223DADF4921468CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77BE17B36D46E00B707A7E32A2E7A385</key>
 		<dict>
 			<key>primary</key>
 			<true/>
