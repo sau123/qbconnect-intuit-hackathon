@@ -1,0 +1,6 @@
+framework module Pods_QBConnectHack {
+  umbrella header "Pods-QBConnectHack-umbrella.h"
+
+  export *
+  module * { export * }
+}
