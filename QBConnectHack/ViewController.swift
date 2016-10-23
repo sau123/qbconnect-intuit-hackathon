@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
 
@@ -16,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var contactNumber: UITextField!
     
     
+    var parseDAO = ParseDAO(className: "QBUser");
     
     @IBAction func submit(){
         // make a n/w call to send the data
@@ -24,6 +26,15 @@ class ViewController: UIViewController {
         print("Email ID  : \(emailID.text)")
         print("contact No : \(contactNumber.text)")
         
+        let userDO = UserDO();
+        userDO.userFirstName = firstName.text
+        userDO.userLastName = lastName.text
+        userDO.userEmail = emailID.text
+        userDO.userContact = contactNumber.text
+        
+        parseDAO.upsert(userDO) { (created : Bool, pfObject : PFObject?, error :  NSError?) in
+            print("user created ... \(created)")
+        }
         
     }
     override func viewDidLoad() {
