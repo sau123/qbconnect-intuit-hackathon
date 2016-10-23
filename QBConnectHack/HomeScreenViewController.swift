@@ -18,6 +18,10 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
     var user = UserDO()
     var customers = NetworkCall.getData()
     override func viewDidLoad() {
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        customers = NetworkCall.getData()
         super.viewDidLoad()
         print("email : \(user.userEmail)")
         print("pswd : \(user.password)")
@@ -70,6 +74,7 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
             "Body" : "Hello World !!"
         ];
         
+        /*uncomment this
         swiftRequest.post("https://api.twilio.com/2010-04-01/Accounts/AC36fc4be9360cca1bd49bd0db10152d03/Messages",
                           auth: ["username" : "AC36fc4be9360cca1bd49bd0db10152d03", "password" : "da72cd5c20fa0adb901878c4ab163115"],
             data: data,
@@ -80,17 +85,26 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
                     print("Error: \(err)")
                 }
         });
-        
+        */
         
     }
 
+    @IBOutlet weak var tableView: UITableView!
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("customers : \(customers.count)")
         return customers.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as! UserCell
+        
+        let dic = customers[indexPath.row] as! NSDictionary
+        print("dic : \(dic)")
+        cell.date.text = dic["date"] as? String
+        cell.desc.text = dic["description"] as? String
+        
+        return cell
     }
     
 
