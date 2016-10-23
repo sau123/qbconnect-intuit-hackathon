@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		7B3F74011DBC32230045FCFB /* UserDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F74001DBC32230045FCFB /* UserDO.swift */; };
 		7B3F74031DBC32C00045FCFB /* ParseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3F74021DBC32C00045FCFB /* ParseDAO.swift */; };
+		CE2D94051DBC51EB0094C333 /* UserCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94041DBC51EB0094C333 /* UserCreatedViewController.swift */; };
+		CE2D94071DBC63F20094C333 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94061DBC63F20094C333 /* SignInViewController.swift */; };
+		CE2D94091DBC6C4B0094C333 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94081DBC6C4B0094C333 /* HomeScreenViewController.swift */; };
+		CE2D940C1DBC6E600094C333 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D940B1DBC6E600094C333 /* UserMapper.swift */; };
+		CE2D940E1DBCA67A0094C333 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D940D1DBCA67A0094C333 /* Customer.swift */; };
+		CE2D94121DBCA74E0094C333 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94111DBCA74E0094C333 /* UserCell.swift */; };
+		CE2D94151DBCB03B0094C333 /* QBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94141DBCB03B0094C333 /* QBClient.swift */; };
 		CE7A0BB01DBBD9E2000C27CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */; };
 		CE7A0BB21DBBD9E2000C27CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */; };
 		CE7A0BB51DBBD9E2000C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0BB31DBBD9E2000C27CE /* Main.storyboard */; };
@@ -25,6 +32,13 @@
 		7B3F74001DBC32230045FCFB /* UserDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDO.swift; sourceTree = "<group>"; };
 		7B3F74021DBC32C00045FCFB /* ParseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDAO.swift; sourceTree = "<group>"; };
 		8F6134368C3550947C3DE7BC /* Pods_QBConnectHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBConnectHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2D94041DBC51EB0094C333 /* UserCreatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCreatedViewController.swift; sourceTree = "<group>"; };
+		CE2D94061DBC63F20094C333 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE2D94081DBC6C4B0094C333 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CE2D940B1DBC6E600094C333 /* UserMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
+		CE2D940D1DBCA67A0094C333 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		CE2D94111DBCA74E0094C333 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		CE2D94141DBCB03B0094C333 /* QBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBClient.swift; sourceTree = "<group>"; };
 		CE7A0BAC1DBBD9E2000C27CE /* QBConnectHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBConnectHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +62,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2D940A1DBC6E4A0094C333 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D940B1DBC6E600094C333 /* UserMapper.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
+		CE2D94131DBCB0130094C333 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D94141DBCB03B0094C333 /* QBClient.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		CE7A0BA31DBBD9E2000C27CE = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +99,8 @@
 		CE7A0BAE1DBBD9E2000C27CE /* QBConnectHack */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D94131DBCB0130094C333 /* API */,
+				CE2D940A1DBC6E4A0094C333 /* Mapper */,
 				CEE6FF781DBC245500BACA11 /* Utils */,
 				CE7A0BC41DBC0DBA000C27CE /* Model */,
 				CE7A0BC31DBC0DAB000C27CE /* Views */,
@@ -95,6 +127,9 @@
 			children = (
 				CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */,
 				CEE6FF7B1DBC2AED00BACA11 /* ListViewController.swift */,
+				CE2D94041DBC51EB0094C333 /* UserCreatedViewController.swift */,
+				CE2D94061DBC63F20094C333 /* SignInViewController.swift */,
+				CE2D94081DBC6C4B0094C333 /* HomeScreenViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -102,6 +137,7 @@
 		CE7A0BC31DBC0DAB000C27CE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D94111DBCA74E0094C333 /* UserCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -111,6 +147,7 @@
 			children = (
 				7B3F74001DBC32230045FCFB /* UserDO.swift */,
 				7B3F74021DBC32C00045FCFB /* ParseDAO.swift */,
+				CE2D940D1DBCA67A0094C333 /* Customer.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,9 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2D94151DBCB03B0094C333 /* QBClient.swift in Sources */,
+				CE2D94121DBCA74E0094C333 /* UserCell.swift in Sources */,
 				CE7A0BB21DBBD9E2000C27CE /* ViewController.swift in Sources */,
+				CE2D940C1DBC6E600094C333 /* UserMapper.swift in Sources */,
+				CE2D94051DBC51EB0094C333 /* UserCreatedViewController.swift in Sources */,
 				CE7A0BB01DBBD9E2000C27CE /* AppDelegate.swift in Sources */,
 				7B3F74031DBC32C00045FCFB /* ParseDAO.swift in Sources */,
+				CE2D94071DBC63F20094C333 /* SignInViewController.swift in Sources */,
+				CE2D94091DBC6C4B0094C333 /* HomeScreenViewController.swift in Sources */,
+				CE2D940E1DBCA67A0094C333 /* Customer.swift in Sources */,
 				CEE6FF7C1DBC2AED00BACA11 /* ListViewController.swift in Sources */,
 				7B3F74011DBC32230045FCFB /* UserDO.swift in Sources */,
 				CEE6FF7A1DBC247900BACA11 /* Constants.swift in Sources */,

@@ -15,6 +15,8 @@ class UserDO: PFObject, PFSubclassing {
     @NSManaged var userLastName : String?
     @NSManaged var userEmail : String?
     @NSManaged var userContact : String?
+    @NSManaged var state : String?
+    @NSManaged var password : String?
     
     
     static func parseClassName() -> String {

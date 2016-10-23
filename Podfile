@@ -7,8 +7,8 @@ target 'QBConnectHack' do
   
  pod 'Parse', '1.14.2'
  pod 'HPReorderTableView', '~> 0.2'
-	
-
+  pod 'AFNetworking', '~> 2.5' 
+ pod 'Alamofire', '~> 3.5.0'
   # Pods for QBConnectHack
 
 end
