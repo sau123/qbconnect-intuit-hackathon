@@ -8,8 +8,7 @@
 
 import UIKit
 
-class QBClient: NSObject {
-
+class QBClient: NSObject{
     
     
 }

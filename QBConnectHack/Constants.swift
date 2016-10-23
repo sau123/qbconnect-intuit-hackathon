@@ -9,8 +9,8 @@
 import UIKit
 
 class Constants: NSObject {
-
-    // ============= Parse ===================    
+    
+    // ============= Parse ===================
     static let parseAppId : String = "groupit2"
     static let parseServer : String = "https://groupit2.herokuapp.com/parse"
     
@@ -18,6 +18,5 @@ class Constants: NSObject {
     // ============= Segues ===================
     static let userCreatedSegue = "userCreatedSegue"
     static let homeScreenSegue = "homeScreenSegue"
-
-
+    
 }

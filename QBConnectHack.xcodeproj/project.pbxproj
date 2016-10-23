@@ -16,6 +16,8 @@
 		CE2D940E1DBCA67A0094C333 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D940D1DBCA67A0094C333 /* Customer.swift */; };
 		CE2D94121DBCA74E0094C333 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94111DBCA74E0094C333 /* UserCell.swift */; };
 		CE2D94151DBCB03B0094C333 /* QBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94141DBCB03B0094C333 /* QBClient.swift */; };
+		CE2D941A1DBD0B1C0094C333 /* NetworkCall.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2D94191DBD0B1C0094C333 /* NetworkCall.m */; };
+		CE2D941C1DBD12F00094C333 /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D941B1DBD12F00094C333 /* SwiftRequest.swift */; };
 		CE7A0BB01DBBD9E2000C27CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */; };
 		CE7A0BB21DBBD9E2000C27CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */; };
 		CE7A0BB51DBBD9E2000C27CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7A0BB31DBBD9E2000C27CE /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 		CE2D940D1DBCA67A0094C333 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		CE2D94111DBCA74E0094C333 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		CE2D94141DBCB03B0094C333 /* QBClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBClient.swift; sourceTree = "<group>"; };
+		CE2D94171DBD0B1C0094C333 /* QBConnectHack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QBConnectHack-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE2D94181DBD0B1C0094C333 /* NetworkCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkCall.h; sourceTree = "<group>"; };
+		CE2D94191DBD0B1C0094C333 /* NetworkCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkCall.m; sourceTree = "<group>"; };
+		CE2D941B1DBD12F00094C333 /* SwiftRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRequest.swift; sourceTree = "<group>"; };
 		CE7A0BAC1DBBD9E2000C27CE /* QBConnectHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBConnectHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7A0BAF1DBBD9E2000C27CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7A0BB11DBBD9E2000C27CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,9 +79,20 @@
 		CE2D94131DBCB0130094C333 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D941B1DBD12F00094C333 /* SwiftRequest.swift */,
 				CE2D94141DBCB03B0094C333 /* QBClient.swift */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		CE2D94161DBD0AEA0094C333 /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D94181DBD0B1C0094C333 /* NetworkCall.h */,
+				CE2D94191DBD0B1C0094C333 /* NetworkCall.m */,
+				CE2D94171DBD0B1C0094C333 /* QBConnectHack-Bridging-Header.h */,
+			);
+			name = "Objective-C";
 			sourceTree = "<group>";
 		};
 		CE7A0BA31DBBD9E2000C27CE = {
@@ -99,6 +116,7 @@
 		CE7A0BAE1DBBD9E2000C27CE /* QBConnectHack */ = {
 			isa = PBXGroup;
 			children = (
+				CE2D94161DBD0AEA0094C333 /* Objective-C */,
 				CE2D94131DBCB0130094C333 /* API */,
 				CE2D940A1DBC6E4A0094C333 /* Mapper */,
 				CEE6FF781DBC245500BACA11 /* Utils */,
@@ -307,11 +325,13 @@
 				CE7A0BB01DBBD9E2000C27CE /* AppDelegate.swift in Sources */,
 				7B3F74031DBC32C00045FCFB /* ParseDAO.swift in Sources */,
 				CE2D94071DBC63F20094C333 /* SignInViewController.swift in Sources */,
+				CE2D941A1DBD0B1C0094C333 /* NetworkCall.m in Sources */,
 				CE2D94091DBC6C4B0094C333 /* HomeScreenViewController.swift in Sources */,
 				CE2D940E1DBCA67A0094C333 /* Customer.swift in Sources */,
 				CEE6FF7C1DBC2AED00BACA11 /* ListViewController.swift in Sources */,
 				7B3F74011DBC32230045FCFB /* UserDO.swift in Sources */,
 				CEE6FF7A1DBC247900BACA11 /* Constants.swift in Sources */,
+				CE2D941C1DBD12F00094C333 /* SwiftRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,10 +445,13 @@
 			baseConfigurationReference = 4A1700E25E71B8CC299BD76A /* Pods-QBConnectHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QBConnectHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saumeel.QBConnectHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QBConnectHack/QBConnectHack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -437,10 +460,12 @@
 			baseConfigurationReference = 18BC7ED3BA5B939149C20B0F /* Pods-QBConnectHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QBConnectHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saumeel.QBConnectHack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QBConnectHack/QBConnectHack-Bridging-Header.h";
 			};
 			name = Release;
 		};

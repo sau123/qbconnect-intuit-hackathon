@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var parseDAO = ParseDAO(className: "QBUser");
     
     @IBAction func submit(){
+        
         // make a n/w call to send the data
         print("firstName : \(firstName.text)")
         print("lastName : \(lastName.text)")
