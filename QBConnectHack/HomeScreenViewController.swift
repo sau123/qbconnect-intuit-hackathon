@@ -27,12 +27,32 @@ class HomeScreenViewController: UIViewController, UITableViewDataSource, UITable
             "oauth_token": "lvprdGh6mZ0YyQQ3fQqD5duqnD9h3ftapUgXnwcLHYDbW5lt",
             "oauth_signature_method": "HMAC-SHA1"
         ]
-        Alamofire.request(.GET, "https://quickbooks.api.intuit.com/v3/company/123145711296839/companyinfo/123145711296839?minorversion=4", parameters: parameters)
-            .response { request, response, data, error in
-                print(request)
-                print(response)
-                print(error)
-        }
+        
+        let urlPath: String = "https://quickbooks.api.intuit.com/v3/company/123145711296839/companyinfo/123145711296839?oauth_consumer_key=qyprdDvFLbXqTDMsUoLIygz81s8oxI&oauth_token=lvprdGh6mZ0YyQQ3fQqD5duqnD9h3ftapUgXnwcLHYDbW5lt&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1477211868&oauth_nonce=thcuwI&oauth_version=1.0&oauth_signature=s2WYYgiUzEsKGbdbJyUhyF9hcIY="
+        let url: NSURL = NSURL(string: urlPath)!
+//        let request: NSURLRequest = NSURLRequest(URL: url)
+        let queue:NSOperationQueue = NSOperationQueue()
+//        
+//        request.setValue("application/json", forKey : "Content-Type")
+//        request.setValue("application/json", forKey : "Accept")
+        
+        let request = NSMutableURLRequest(URL: url)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+            
+            do {
+                let str = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                print("str : \(str)")
+                if let jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? NSDictionary {
+                    print("ASynchronous\(jsonResult)")
+                }
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        })
+        
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
